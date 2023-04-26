@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Array built-in functions</title>
+
+		<!-- Google Fonts (Roboto) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="./script.js" defer></script>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="card">
+			<h1>Semicolon array builtin functions & innerHTML task</h1>
+			<h2>1. innerText VS. innerHTML</h2>
+			<div class="info">
+				<h3>innerText</h3>
+				<p>
+					innerText is property can be applied to DOM objects in Javascript to
+					be able to get and edit text content only of the element (without any
+					tags); That means if you put HTML code with innerText it will be shown
+					as the code you put like "&lt;p&gt;content&lt;/p&gt;".
+				</p>
+				<h3>innerHTML</h3>
+				<p>
+					innerHTML is another property for DOM objects same as innerText
+					property but you can get and edit HTML tags.
+				</p>
+			</div>
+			<div class="btn-nav">
+				<button id="text-btn">Click to change text content</button>
+				<button id="html-btn">Click to change html content</button>
+			</div>
+			<div id="container">This is an old content</div>
+			<h2>2. array built-in functions</h2>
+			<h3>Open console to see the effect of the written script.</h3>
+			<div class="info">
+				<h3>map(callbackfn)</h3>
+				<p>
+					map function returns new array that contains edited values of the
+					array. map function accept one parameter that should be a callback
+					function. the callback function should has two parameters value and
+					index. the callback function should return the new value of the
+					current index. value parameter is the value of the current index.
+					index parameter is telling us where we are in the array.
+				</p>
+				<h3>filter(predicate)</h3>
+				<p>
+					filter function returns new filtered array. filter function accept one
+					parameter that should be a function. the function should has two
+					parameters value and index. the function should return boolean value;
+					If the boolean value is true, the function keep the current value and
+					if it's false it removes the value from the array.
+				</p>
+				<h3>reduce(callbackfn)</h3>
+				<p>
+					reduce function just like map function but it accept two parameters:
+					function with three parameters. previousvalue: it contains the value
+					of the last iteration, currentvalue: it contains the value of the
+					current index, currentindex. the second parameter of reduce function
+					is the default value if there is no previous value.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

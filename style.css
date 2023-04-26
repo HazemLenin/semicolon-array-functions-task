@@ -1,0 +1,56 @@
+html, *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #25013d;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 600px;
+    padding: 20px;
+    box-shadow: 0 5px 10px 2px #00000080;
+    background: #363261;
+    border-radius: 25px;
+}
+
+.info {
+    width: 700px;
+}
+
+.info h2,
+.info p {
+    margin: 0 0 10px 0;
+}
+
+.btn-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-nav button {
+    background: white;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.btn-nav button:hover {
+    background: lightgray;
+}
